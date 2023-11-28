@@ -1,37 +1,40 @@
-html,body
-{
+/* Global styles for the entire document */
+html,
+body {
     background-color: #000000;
+    /* Background color for the entire page */
     color: #EAFBEB;
+    /* Text color */
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    /* Font family for the entire page */
 }
 
-.body
-{
+/* Styles for the main body container */
+.body {
     width: 100%;
     height: 100vh;
     display: flex;
 }
 
-.sidebar
-{
+/* Styles for the sidebar */
+.sidebar {
     width: 19%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.main-content
-{
+/* Styles for the main content area */
+.main-content {
     width: 80%;
     height: 100%;
 }
 
-.sidebar-nav
-{
+/* Styles for the sidebar navigation */
+.sidebar-nav {
     width: 92%;
     height: 95%;
     border-radius: 20px;
@@ -42,82 +45,81 @@ html,body
     align-items: center;
 }
 
-.navbar
-{
+/* Styles for the main navbar */
+.navbar {
     width: 80%;
 }
 
-.line-1
-{
+/* Styles for the first line of the navbar */
+.line-1 {
     height: 15%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color:#209eaa;
+    color: #209eaa;
+    /* Color for specific text in the navbar */
 }
 
-.line-2
-{
+/* Styles for the second line of the navbar */
+.line-2 {
     height: 40%;
     display: flex;
     flex-direction: column;
 }
 
-.line-3
-{
+/* Styles for the third line of the navbar */
+.line-3 {
     height: 30%;
 }
 
-.second-navbar
-{
+/* Styles for the second navbar within the sidebar */
+.second-navbar {
     display: flex;
     width: 60%;
     justify-content: flex-start;
     line-height: 12px;
 }
 
-.second-navbar > img
-{
+/* Styles for images within the second navbar */
+.second-navbar>img {
     margin-right: 10px;
 }
 
-.third-navbar
-{
+/* Styles for the third navbar within the sidebar */
+.third-navbar {
     display: flex;
     width: 60%;
     justify-content: flex-start;
     line-height: 12px;
 }
 
-.third-navbar >img
-{
+/* Styles for images within the third navbar */
+.third-navbar>img {
     margin-right: 10px;
 }
 
-.header
-{
+/* Styles for the header section */
+.header {
     background-color: #080808;
     width: 100%;
     height: 20vh;
     margin-top: 5px;
     border-radius: 15px;
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(7,1fr)
+    grid-template-columns: repeat(7, 1fr);
 }
 
-.headerItem
-{
+/* Styles for individual items within the header */
+.headerItem {
     width: 100%;
     height: 100%;
-    /*border: 2px solid rebeccapurple;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.userName-bellIcon
-{
+/* Styles for the user name and bell icon in the header */
+.userName-bellIcon {
     grid-column-start: 6;
     grid-column-end: 9;
     grid-row: 1;
@@ -127,83 +129,98 @@ html,body
     font-size: larger;
 }
 
-.bell
-{
+/* Styles for the bell icon */
+.bell {
     margin-right: 40px;
     width: 30px;
 }
 
-.profile-pic
-{
+/* Styles for the profile picture */
+.profile-pic {
     height: 80%;
     margin-right: 30px;
 }
 
-.share-button
-{
-    grid-column: -1;
+/* Styles for the new upload share button in the header */
+.new-upload-share-button {
+    grid-column: -4/span 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.upload-button
-{
-    grid-column: -2;
+/* Styles for the general button */
+.btn {
+    width: 100px;
+    height: 50%;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #fff;
+    background-color: #072022;
+    border-style: solid;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
 }
 
-.new-button
-{
-    grid-column: -3;
+/* Styles for button hover state */
+.btn:hover {
+    background-color: #27C0CE;
+    color: #000000;
+    transform: translateY(-4px);
 }
 
-.userName-profilePic
-{
+/* Styles for button active state */
+.btn:active {
+    transform: translateY(4px);
+}
+
+/* Styles for user name and profile picture section in the header */
+.userName-profilePic {
     grid-column: -8;
     grid-row: 2;
 }
 
-.userName-profilePic-name-portion
-{
+/* Styles for different portions of the user name and profile picture section */
+.userName-profilePic-name-portion {
     color: #27C0CE;
-    font-size:large;
+    font-size: large;
     font-weight: bolder;
     margin-right: 20px;
 }
 
-.userName-profilePic-userName-protion
-{
+.userName-profilePic-userName-protion {
     font-style: italic;
 }
 
-.grid-col-span-4 
-{
+/* Styles for specific grid column spans */
+.grid-col-span-4 {
     grid-column: span 4;
 }
 
-.grid-col-span-3
-{
+.grid-col-span-3 {
     grid-column: span 3;
 }
 
-.search-bar
-{
+/* Styles for the search bar */
+.search-bar {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.search-bar>img
-{
+/* Styles for the search bar image */
+.search-bar>img {
     margin-right: 20px;
-    width: 30px;
 }
 
-input::placeholder
-{
+/* Styles for the input placeholder */
+input::placeholder {
     color: white;
     padding-left: 20px;
 }
 
-.form 
-{
+/* Styles for the form container */
+.form {
     --timing: 0.3s;
     --width-of-input: 80%;
     --height-of-input: 50%;
@@ -223,8 +240,8 @@ input::placeholder
     background: var(--input-bg, #fff);
 }
 
-.input 
-{
+/* Styles for the input field */
+.input {
     font-size: 0.9rem;
     background-color: transparent;
     width: 100%;
@@ -235,8 +252,8 @@ input::placeholder
     color: white;
 }
 
-.form:before 
-{
+/* Styles for the border animation before the input field */
+.form:before {
     content: "";
     position: absolute;
     background: var(--border-color);
@@ -250,12 +267,21 @@ input::placeholder
     transition: transform var(--timing) ease;
 }
 
-input:focus 
-{
+/* Styles for the input field focus state */
+input:focus {
     outline: none;
 }
 
-.form:focus-within:before 
-{
+/* Styles for the border animation when the form is focused within */
+.form:focus-within:before {
     transform: scale(1);
+}
+
+.grid-content-template
+{
+    background-color: #080808;
+    width: 100%;
+    height: 75vh;
+    margin-top: 15px;
+    border-radius: 15px;
 }
