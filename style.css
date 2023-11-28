@@ -296,7 +296,6 @@ input:focus {
 {
     width: 100%;
     height: 100%;
-    border: 1px solid #072022;
     border-radius: 15px;
     font-weight: bolder;
 }
@@ -373,9 +372,84 @@ input:focus {
     display: flex;
     flex-direction: row;
 }
-
+/*Style for the fifth grid item */
 .announcement
 {
     grid-column: 5/span 2;
     grid-row: -4/ span 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 12px;
+    color: #fff;
+    font-weight: 400;
+    background-color: #072022;
+}
+/*heading element for the announcement grid item*/
+.highlight 
+{
+    background: linear-gradient(to right, #54DEA5, #27C0CE);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.announcement>ul
+{
+    list-style-type: none;
+}
+
+
+.project-1
+{
+    grid-column: 1/span 2;
+    background-color: #072022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-1-line
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.project-2
+{
+    grid-column: 3/span 2;
+    background-color: #072022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-2-line 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.project-3
+{
+    grid-column: 1/span 2;
+    background-color: #072022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-3-line 
+{
+    display: flex;
+    flex-direction: row;
+}
+.project-4
+{
+    grid-column: 3/span 2;
+    background-color: #072022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-4-line 
+{
+    display: flex;
+    flex-direction: row;
 }
